@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Cards</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('even.jpg') center/cover no-repeat;
+        }
+
+        header {
+            /* background-color: #333; */
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .event-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        
+        .event-card {
+            /* border-radius: 20px; */
+            width: 300px;
+            margin: 20px;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            transition: transform 0.3s;
+        }
+        
+        .event-card:hover {
+            background-color: rgba(255, 255, 255);
+            transform: scale(1.05);
+
+        }
+        
+        .event-card h2 {
+            color: black;
+            
+        }
+        
+        .event-card p {
+            color: black;
+          
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Event Booking</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="booknow.html">Theater</a>
+        <a href="events.html">Events</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+    </nav>
+    <div class="event-cards">
+        <div class="event-card">
+            <h2>Event 1</h2>
+            <p>Date: December 25, 2023</p>
+            <p>Time: 7:00 PM</p>
+            <p>Description: Christmas celebration</p>
+            <p>Location: Hall 1</p>
+           <a href="https://aldwickburyparkgolfclub.co.uk/christmas/?gad_source=1&gclid=Cj0KCQiA3uGqBhDdARIsAFeJ5r1bo_3oJOOZKhv5ScFGx0048y5CB8sxrxxbUUBtdpEW2tZfoOwvPYoaAtDuEALw_wcB"><button>Book Now</button></a> 
+        </div>
+
+        <div class="event-card">
+            <h2>Event 2</h2>
+            <p>Date: December 10, 2023</p>
+            <p>Time: 6:30 PM</p>
+            <p>Description: Marriage</p>
+            <p>Location: Hall 2</p>
+          <a href="https://www.venuemonk.com/gurgaon/wedding-venues?utm_source=google&utm_medium=cpc&utm_campaign=Ser-Wedding-Gurgaon-Generic-Exact&matchtype=e&device=m&campaignid=16621966488&loc_physical_ms=9075215&network=g&keyword=book%20venue%20for%20wedding&placement=&gclid=Cj0KCQiA3uGqBhDdARIsAFeJ5r205jMLYG_kt7e06BSpUoyf2d0Ww9y2Vhrf8ZDmRx9qaWo-TMqDtDMaAhNvEALw_wcB"><button>Book Now</button></a>  
+        </div>
+
+        <div class="event-card">
+            <h2>Event 3</h2>
+            <p>Date: January 14, 2024</p>
+            <p>Time: 8:00 PM</p>
+            <p>Description: Makar Sankranti</p>
+            <p>Location: Hall 3</p>
+           <a href="https://www.coox.in/bartender/occasion/makar-sankranti-at-home"><button>Book Now</button></a> 
+        </div>
+
+        <div class="event-card">
+            <h2>Event 4</h2>
+            <p>Date: February 20, 2024</p>
+            <p>Time: 5:45 PM</p>
+            <p>Description: Holi </p>
+            <p>Location: Hall 4</p>
+          <a href="https://in.bookmyshow.com/explore/holi-parties"> <button>Book Now</button></a> 
+        </div>
+    </div>
+
+</body>
+</html>
+

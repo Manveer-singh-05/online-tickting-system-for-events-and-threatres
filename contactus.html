@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url('11.jpg') center/cover no-repeat;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      /* justify-content: center; */
+      flex-direction: column;
+
+    }
+
+    form {
+        margin-top: 80px;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 500px;
+      text-align: center;
+    }
+
+   
+
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 30px;
+      box-sizing: border-box;
+      border-radius: 10px;
+      font-size: 15px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+  <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <h1>Theater & Event Booking</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="booknow.html">Theater</a>
+        <a href="events.html">Events</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+    </nav>
+  <form id="contactForm">
+    <!-- <label for="firstName">First Name:</label> -->
+    <input type="text" id="firstName" name="firstName" required placeholder="First Name">
+
+    <!-- <label for="lastName">Last Name:</label> -->
+    <input type="text" id="lastName" name="lastName" required placeholder="Last Name">
+
+    <!-- <label for="email">Email:</label> -->
+    <input type="email" id="email" name="email" required placeholder="Email">
+
+    <!-- <label for="mobile">Mobile Number:</label> -->
+    <input type="tel" id="mobile" name="mobile" required  placeholder="Mobile">
+
+    <!-- <label for="message">Message:</label> -->
+    <textarea id="message" name="message" rows="4" required  placeholder="Message"></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+      // Add your form submission logic here
+      alert('Form submitted!');
+      event.preventDefault(); // Prevent the form from actually submitting for this example
+    });
+  </script>
+
+</body>
+</html>

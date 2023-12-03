@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Booking Form</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+      
+body{
+
+    background: url('12.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+        form {
+            max-width: 600px;
+            margin-top: 80px;
+            /* margin: 20px auto; */
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.5);;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 30px;
+        }
+
+        /* label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        } */
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            height: 60px;
+            width: 150px;
+            font-size: 20px;
+            border-radius: 20px;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Event Booking</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="booknow.html">Theater</a>
+        <a href="events.html">Events</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+    </nav>
+
+    <form >
+        <input type="text" id="name" name="name" required placeholder="Name">
+
+        <input type="time" id="time" name="time" required placeholder="Time">
+
+        <input type="date" id="date" name="date" required placeholder="">
+
+
+        <input type="text" id="location" name="ename" required placeholder="Location">
+    
+        <input type="text" id="location" name="Theater" required placeholder=" Theater">
+
+    </form>
+   <a href="ff.html"><input type="submit" value="Book Now"></a> 
+
+</body>
+</html>
